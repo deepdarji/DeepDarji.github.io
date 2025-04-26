@@ -440,14 +440,34 @@ a {
 }
 
 .avatar-image {
+    /* Size & Shape */
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: url('https://raw.githubusercontent.com/DeepDarji/DeepDarji.github.io/f36edbd572a201bdedf1edec34e472a10fe7dbf7/assets/images/avatar.webp') center/cover;
+    object-fit: cover;
+    /* Replaces background-size: cover */
+
+    /* Visual Effects */
     border: 3px solid var(--primary);
     box-shadow: var(--glow);
     position: relative;
     z-index: 2;
+
+}
+
+/* Fallback if image fails to load */
+.avatar-image:not([src]) {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: "DD";
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+    }
 }
 
 .tech-orbits {
