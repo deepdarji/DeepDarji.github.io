@@ -443,13 +443,12 @@ a {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: url('assets/images/avatar.webp') center/cover no-repeat;
+    background: url('assets/images/avatar.webp') center/cover;
     border: 3px solid var(--primary);
     box-shadow: var(--glow);
-    /* Prevent zoom */
-    background-size: contain; /* Shows full image */
-    background-color: #0a0a14; /* Fallback color */
-  }
+    position: relative;
+    z-index: 2;
+}
 
 .tech-orbits {
     position: absolute;
