@@ -1,0 +1,48 @@
+<svg width="800px" height="800px" viewBox="-30.5 0 317 317" xmlns="http://www.w3.org/2000/svg">
+  <!-- Glow background -->
+  <filter id="neon-glow">
+    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+  </filter>
+  
+  <!-- Main Flutter logo -->
+  <g filter="url(#neon-glow)">
+    <!-- Primary wing -->
+    <polygon 
+      fill="#00f7ff" 
+      points="157.666 0.001 0.001 157.666 48.801 206.466 255.268 0.001"
+      opacity="0.9"
+    />
+    
+    <!-- Secondary wing -->
+    <polygon 
+      fill="#00f7ff" 
+      points="156.567 145.397 72.149 229.815 121.133 279.531 169.843 230.821 255.268 145.397"
+      opacity="0.8"
+    />
+    
+    <!-- Darker accent (for depth) -->
+    <polygon 
+      fill="#0079B3" 
+      points="121.133 279.531 158.215 316.613 255.268 316.613 169.843 230.821"
+      opacity="0.7"
+    />
+    
+    <!-- Core shape -->
+    <polygon 
+      fill="#00D2FF" 
+      points="71.6 230.364 120.401 181.563 169.842 230.821 121.133 279.531"
+    />
+  </g>
+  
+  <!-- Optional: Add pulse animation via CSS class -->
+  <style>
+    .flutter-icon {
+      animation: pulse 2s infinite alternate;
+    }
+    @keyframes pulse {
+      from { opacity: 0.9; }
+      to { opacity: 1; }
+    }
+  </style>
+</svg>

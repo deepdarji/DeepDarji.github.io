@@ -1,859 +1,509 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deep Darji - Game and App Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Darji | Futuristic App & Game Developer</title>
+    <meta name="description"
+        content="Mobile App Developer & Unity Game Developer specializing in Flutter, Android, and Unity technologies">
 
+    <!-- Preload important resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="assets/images/my-avatar.png" type="image/x-icon"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!--- custom css link -->
-  <link rel="stylesheet" href="assets/css/style.css"/>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
 
-  <!-- - google font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-
-  <!-- #MAIN -->
-
-  <main>
-
-    <!-- #SIDEBAR -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="assets/images/my-avatar.png" alt="Deep Darji" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Deep Darji">Deep Darji</h1>
-
-          <p class="title">Game Developer</p>
-          </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:darjideep74@gmail.com" class="contact-link">darjideep74@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+919687712038" class="contact-link">+91 9687712038</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">May 10, 2002</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Mehsana, Gujarat, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/deepdarji" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://twitter.com/DeepDarji_" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://instagram.com/deepdarji_" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-          
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/deepdarji" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          
-          <li class="social-item">
-            <a href="https://www.fiverr.com/deepdarji" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--#main-content -->
-
-    <div class="main-content">
-
-      <!--#NAVBAR-->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <!--
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-          -->
-          <!--
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-          -->
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!-- - #ABOUT-->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-         <p>Passionate game and app developer with love to learn and adopt new skills. have good experience in Unity game engine and Flutter framework.</p>
-          
-         </section>
-
-
-        <!--- service -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="assets/images/icon-game.svg" alt="camera icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Game Developer</h4>
-                <p class="service-item-text">
-                  Crafting Immersive Experiences: Developing Games for Unforgettable Journeys
-                </p>
-              </div>
-            </li>
-
-
-            
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="assets/images/icon-design.svg" alt="Content Writer" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">App Developer</h4>
-                <p class="service-item-text">
-                  Making Applications for Modern Digital Experiences
-                </p>
-              </div>
-            </li>
-
-
-            <!--
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Website</h4>
-                <p class="service-item-text">
-                  Designing Websites for Impactful Digital Impressions
-                </p>
-              </div>
-            </li>
-
-            
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile Apps</h4>
-                <p class="service-item-text">
-                  
-                </p>
-              </div>
-            </li>
-            -->
-
-            
-          </ul>
-
-        </section>
-
-
-        <!-- testimonials  -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-           <!-- testimonial 1  -->
-            
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="assets/images/avatar-1.png" alt="carloscc284" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>carloscc284</h4>
-                
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Received a great application! It exceeded my expectations in terms of functionality and ease of use. The user interface is intuitive and the features are well thought out. I would highly recommend this app to anyone looking for a reliable and efficient solution.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-            <!-- testimonial 1 End  -->
-
-            
-
-          </ul>
-
-        </section>
-
-
-        <!--- testimonials modal -->
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-              <img src="assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-              <time datetime="2021-06-14">March, 2023</time>
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!-- clients-->
-        <!--
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="https://codewithsadee.github.io/vcard-personal-portfolio/assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
--->
-      </article>
-
-
-
-
-
-      <!--- #RESUME-->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-            
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Gujarat Technology Univerity</h4>
-              <span>2022 — 2025</span>
-              <p class="timeline-text">
-                Bachelor - Computer Engineering
-              </p>
-            </li>
-            
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Ganapat University</h4>
-              <span>2019 — 2022</span>
-              <p class="timeline-text">
-                Diploma - Computer of Engineering
-              </p>
-            </li>
-
-            <!--
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">High school</h4>
-              <span>2016 — 2017</span>
-              <p class="timeline-text">
-                GSHSEB - SSC
-              </p>
-            </li>
-            -->
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          
-          
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Customer Service Agent</h4>
-              <span>March 2023 — Dec 2023</span>
-              <p class="timeline-text">
-                D2H - Customer Relationship Management
-              </p>
-            </li>
-            
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Game Community Manager</h4>
-              <span>April 2023 — June 2023</span>
-              <p class="timeline-text">
-                StareOut Games - Game Community Manager and Testing
-              </p>
-            </li>
-
-            
-            
-            <!-- #Experience  -->
-            
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Skills</h3>
-
-          <ul class="skills-list content-card">
-
-
-
-
-              
-                  <!-- #Unity  -->
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Unity</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-
-  
-                  <!-- #Android studio  -->            
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Android Studio</h5>
-                <data value="80">80%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </li>
-
-                <!-- #Flutter  -->            
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Flutter</h5>
-                <data value="80">90%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-            </li>            
-
-
-  
-                  <!-- #Github  -->
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Git/Github</h5>
-                <data value="50">50%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-            </li>
-
-
-
-
-
-            
-
-          </ul>
-        </section>
-
-      </article>
-
-
-
-
-
-      <!-- #PORTFOLIO  -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            
-            <li class="filter-item">
-              <button data-filter-btn>Apps</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Games</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>all</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>web</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>apps</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>games</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <!-- Startup Surge  -->
-            <li class="project-item  active" data-filter-item data-category="games">
-              <a href="https://github.com/DeepDarji/Startup-Surge">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://deepdarji.github.io/assets/images/startupsurge.png" alt="Startup Surge" loading="lazy">
-                </figure>
-                <h3 class="project-title">Startup Surge</h3>
-                <p class="project-category">Games</p>
-              </a>
-            </li>
-
-            <!-- Argon Assaultt  -->
-            <li class="project-item  active" data-filter-item data-category="games">
-              <a href="https://github.com/DeepDarji/Argon-Assaultt">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/argonassault.png" alt="Platformer PJ" loading="lazy">
-                </figure>
-                <h3 class="project-title">Argon Assault</h3>
-                <p class="project-category">Games</p>
-              </a>
-            </li>           
-
-            <!-- Flappy OWl  -->
-              <li class="project-item  active" data-filter-item data-category="games">
-              <a href="https://github.com/DeepDarji/flappy-owl">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="assets/images/flappyowll.png" alt="Flappy Owl" loading="lazy">
-                </figure>
-                <h3 class="project-title">Flappy Owl</h3>
-                <p class="project-category">Games</p>
-              </a>
-            </li>
-
-            <!-- GJ APP  -->
-            <li class="project-item  active" data-filter-item data-category="apps">
-              <a href="https://github.com/DeepDarji/GJ-App">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://deepdarji.github.io/assets/images/project-3.png" alt="GJ App" loading="lazy">
-                </figure>
-                <h3 class="project-title">GJ App</h3>
-                <p class="project-category">Apps</p>
-              </a>
-            </li>
-
-
-            <!-- Fruit Catcher  -->
-            <li class="project-item  active" data-filter-item data-category="games">
-              <a href="https://github.com/DeepDarji/Fruit-Catcher">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://deepdarji.github.io/assets/images/fruitcatcher.png" alt="Fruit Catcher" loading="lazy">
-                </figure>
-                <h3 class="project-title">Fruit Catcher </h3>
-                <p class="project-category">Games</p>
-              </a>
-            </li>
-
-            <!-- Pokémon Card  -->
-            <li class="project-item  active" data-filter-item data-category="games">
-              <a href="https://github.com/DeepDarji/Str8bat">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://deepdarji.github.io/assets/images/pokecard.png" alt="Pokémon Card" loading="lazy">
-                </figure>
-                <h3 class="project-title">Pokémon Card</h3>
-                <p class="project-category">Games</p>
-              </a>
-            </li>
-            
-            <!-- Frivia  -->
-            <li class="project-item  active" data-filter-item data-category="apps">
-              <a href="https://github.com/DeepDarji/Frivia">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://deepdarji.github.io/assets/images/frivia.png" alt="Frivia" loading="lazy">
-                </figure>
-                <h3 class="project-title">Frivia</h3>
-                <p class="project-category">Apps</p>
-              </a>
-            </li>
-            
-            <!-- Taskly  -->
-            <li class="project-item  active" data-filter-item data-category="apps">
-              <a href="https://github.com/DeepDarji/Taskly">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="https://deepdarji.github.io/assets/images/taskly.png" alt="Taskly" loading="lazy">
-                </figure>
-                <h3 class="project-title">Taskly</h3>
-                <p class="project-category">Apps</p>
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--#BLOG-->
-
-      <!--
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-
-            <li class="blog-post-item">
-              <a href="https://turnorq.com/future-of-immersive-gaming-experiences-us-vs-the-world/">
-                <figure class="blog-banner-box">
-                  <img src="https://turnorq.com/wp-content/uploads/2023/10/Future-of-immersive-gaming-experiences-US-vs-the-world.png" alt="Design digest #79" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <p class="blog-category">Gaming</p>
-                    <span class="dot"></span>
-                    <time datetime="2023-10-05">Fab 23, 2022</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Gaming US vs the world</h3>
-                  <p class="blog-text">
-                    Future of Immersive Gaming Experiences US vs the world
-                  </p>
-                </div>
-              </a>
-            </li>
-
-            
-          </ul>
-
-        </section>
-
-      </article>
--->
-
-
-
-
-      <!--#CONTACT
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        
-     
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-     
-
-        
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
--->
+    <!-- Particle.js Background 
+    <div id="particles-js"></div> -->
+
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Floating Navigation Dots -->
+    <div class="nav-dots">
+        <a href="#home" class="nav-dot active" data-tooltip="Home"></a>
+        <a href="#skills" class="nav-dot" data-tooltip="Skills"></a>
+        <a href="#experience" class="nav-dot" data-tooltip="Experience"></a>
+        <a href="#projects" class="nav-dot" data-tooltip="Projects"></a>
+        <a href="#certifications" class="nav-dot" data-tooltip="Certifications"></a>
+        <a href="#education" class="nav-dot" data-tooltip="Education"></a>
+        <a href="#contact" class="nav-dot" data-tooltip="Contact"></a>
     </div>
 
-  </main>
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Main Navigation (Hidden on mobile) -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#home" class="logo" data-text="DeepDarji">DeepDarji</a>
+            <div class="nav-links">
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-container">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#certifications" class="mobile-nav-link">Certifications</a>
+            <a href="#education" class="mobile-nav-link">Education</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title glitch" data-text="Deep Darji">Deep Darji</h1>
+                <h2 class="hero-subtitle typewriter">Mobile App & Game Developer</h2>
+                <p class="hero-description">Crafting immersive digital experiences with code and creativity</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary pulse">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="floating-avatar">
+                    <div class="avatar-image"></div>
+                    <div class="tech-orbits">
+                        <div class="orbit orbit-1"><i class="fab fa-android"></i></div>
+                        <div class="orbit orbit-2"><i class="fab fa-unity"></i></div>
+                        <div class="orbit orbit-3">
+                            <!-- Use your existing Flutter SVG with glow effects -->
+                            <img src="D:/Deep/DeepDarji.github.io/assets/icons/flutter.svg" alt="Flutter"
+                                class="orbit-icon"
+                                style="filter: drop-shadow(0 0 8px #00f7ff); width: 60%; height: 60%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-subtitle">Technologies I work with</div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Mobile Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="flutter">
+                            <div class="skill-icon">
+                                <img src="assets/icons/flutter.svg" alt="Flutter" loading="lazy">
+                            </div>
+                            <div class="skill-name">Flutter</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                        <div class="skill-card" data-skill="android">
+                            <div class="skill-icon"><i class="fab fa-android"></i></div>
+                            <div class="skill-name">Android Studio</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                        <div class="skill-card" data-skill="java">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <div class="skill-name">Java</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                        <div class="skill-card" data-skill="kotlin">
+                            <div class="skill-icon">
+                                <img src="assets/icons/kotlin.svg" alt="Kotlin" loading="lazy">
+                            </div>
+                            <div class="skill-name">Kotlin</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                        <div class="skill-card" data-skill="kotlin">
+                            <div class="skill-icon">
+                                <img src="assets/icons/dart.svg" alt="Dart" loading="lazy">
+                            </div>
+                            <div class="skill-name">Dart</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Game Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="unity">
+                            <div class="skill-icon"><i class="fab fa-unity"></i></div>
+                            <div class="skill-name">Unity</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                        <div class="skill-card" data-skill="csharp">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <div class="skill-name">C#</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                        <div class="skill-card" data-skill="csharp">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <div class="skill-name">C++</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                        <div class="skill-card" data-skill="blender">
+                            <div class="skill-icon"><i class="fas fa-cube"></i></div>
+                            <div class="skill-name">Blender</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Other Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="firebase">
+                            <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                            <div class="skill-name">Firebase</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                        <div class="skill-card" data-skill="git">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-name">Git</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                        <div class="skill-card" data-skill="git">
+                            <div class="skill-icon"><i class="fab fa-buysellads"></i></div>
+                            <div class="skill-name">Admob</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                        <div class="skill-card" data-skill="git">
+                            <div class="skill-icon"><i class="fas fa-image"></i></div>
+                            <div class="skill-name">Photoshop</div>
+                            <div class="skill-progress"><span style="width: 100%"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="section-subtitle">My career journey</div>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2025 - April 2025</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">DEO</h3>
+                        <h4 class="timeline-company">Tsusho Group</h4>
+                        <ul class="timeline-description">
+                            <li>It involved accurate data entry and management within Suzuki’s official portal, along
+                                with preparing and processing invoices using SAP.</li>
+                            <li>Gained advanced Excel functions to organize reports and maintain records efficiently.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">March 2023 - Dec 2023</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Customer Support Executive</h3>
+                        <h4 class="timeline-company">DishTV D2H</h4>
+                        <ul class="timeline-description">
+                            <li>Customer Support Executive with experience in handling inbound calls, resolving customer
+                                queries related to products, and providing tailored solutions.</li>
+                            <li>Proficient in using CRM systems to track customer interactions and manage data. Skilled
+                                in offering recharge plans and promotions to enhance customer satisfaction.</li>
+                        </ul>
+                    </div>
+                </div>
 
 
+                <div class="timeline-item">
+                    <div class="timeline-date">April 2023 - June 2023</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Game Commu. Manager Intern</h3>
+                        <h4 class="timeline-company">StareOut Games</h4>
+                        <ul class="timeline-description">
+                            <li>Game Community Manager with expertise in building and managing engaging Discord
+                                communities.</li>
+                            <li>Experience in hosting and managing tournaments, game testing, gathering player feedback,
+                                and collaborating with development teams to identify and fix bugs for an improved gaming
+                                experience.</li>
+                        </ul>
+                    </div>
+                </div>
 
+            </div>
+        </section>
 
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-subtitle">My recent work</div>
+            </div>
+            <div class="projects-grid">
 
+                <div class="project-card">
+                    <div class="project-media">
+                        <img src="\assets\images\gjapp.webp" alt="TaskFlow App Screens" loading="lazy">
+                        <div class="project-badge">Android</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">GJ APP</h3>
+                        <p class="project-description">Multipurpose application with the lower storage and it needs
+                            lower specifications.</p>
+                        <div class="project-tech">
+                            <span>Android Studio</span>
+                            <span>Java</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://raw.githubusercontent.com/DeepDarji/GJ-App/refs/heads/main/GJ%20App%20Latest.apk"
+                                class="project-link"><i class="fas fa-external-link-alt"></i> APK</a>
+                            <a href="https://github.com/DeepDarji/GJ-App" class="project-link"><i
+                                    class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- custom js link-->
-  <script src="assets/js/script.js"></script>
+                <div class="project-card">
+                    <div class="project-media">
+                        <img src="\assets\images\taskly.webp" alt="TaskFlow App Screens" loading="lazy">
+                        <div class="project-badge">Flutter</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Taskly</h3>
+                        <p class="project-description">Efficient task management app, allows users to add, update, and
+                            delete tasks.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/Taskly" class="project-link"><i
+                                    class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- ionicon link= -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                <div class="project-card">
+                    <div class="project-media">
+                        <img src="\assets\images\frivia.webp" alt="TaskFlow App Screens" loading="lazy">
+                        <div class="project-badge">Flutter</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Frivia</h3>
+                        <p class="project-description">A trivia game built with Flutter that utilizes the Provider state
+                            management for tracking game states and handling UI updates.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/Frivia" class="project-link"><i
+                                    class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <a href="/projects/index.html" class="btn btn-outline">View All Projects</a>
+            </div>
+        </section>
 
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certifications-section">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-subtitle">My professional certifications</div>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">Flutter Development</h3>
+                        <div class="certification-issuer">Google - 2023</div>
+                        <a href="#" class="certification-link">View Credential</a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">Unity Certified Developer</h3>
+                        <div class="certification-issuer">Unity Technologies - 2022</div>
+                        <a href="#" class="certification-link">View Credential</a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="certification-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3 class="certification-title">Android App Development</h3>
+                        <div class="certification-issuer">Udacity - 2021</div>
+                        <a href="#" class="certification-link">View Credential</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-subtitle">My academic background</div>
+            </div>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-date">2022 - 2025</div>
+                    <div class="education-content">
+                        <h3 class="education-title">Bachelor in Engineering</h3>
+                        <h4 class="education-institution">Gujarat Technology Univerity</h4>
+                        <div class="education-description">
+                            <p>Specialized in Computer Engineering.</p>
+                            <p>Master hardware/software concepts, Apply modern tools to real-world problems, Develop
+                                ethical software solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-date">2019 - 2022</div>
+                    <div class="education-content">
+                        <h3 class="education-title">Diploma</h3>
+                        <h4 class="education-institution">Ganapat University</h4>
+                        <div class="education-description">
+                            <p>Specialized in Computer Engineering.</p>
+                            <p>Math applications, Problem-solving, HW/SW design, Real-time solutions and Latest IT tech.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-subtitle">Let's work together</div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Email</h3>
+                            <a href="mailto:darjideep74@gmail.com" class="contact-link">darjideep74@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Phone</h3>
+                            <a href="tel:+919687712038" class="contact-link">+91 9687712038</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Location</h3>
+                            <p class="contact-text">Mehsana,Gujarat IND</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/xnndnddy" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                        <label for="name" class="form-label">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="_replyto" class="form-input" placeholder=" " required>
+                        <label for="email" class="form-label">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="_subject" class="form-input" placeholder=" " required>
+                        <label for="subject" class="form-label">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-input" placeholder=" " required></textarea>
+                        <label for="message" class="form-label">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">DeepDarji</a>
+                <p class="footer-text">Mobile App & Game Developer</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/deepdarji" class="social-icon" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/deepdarji" class="social-icon" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/DeepDarji_" class="social-icon" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/deepdarji_" class="social-icon" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.fiverr.com/deepdarji" class="social-icon" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="/" class="footer-link">Home</a>
+                <a href="#skills" class="footer-link">Skills</a>
+                <a href="#projects" class="footer-link">Projects</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 Deep Darji. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,125 @@
+/* Projects Page Specific Styles */
+.projects-header {
+    padding: 5rem 0 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(10,10,20,0.8) 0%, var(--darker) 100%);
+}
+
+.projects-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-filters {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.5rem;
+    background: rgba(0,247,255,0.1);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn.active {
+    background: var(--primary);
+    color: var(--darkest);
+    box-shadow: var(--glow);
+}
+
+.filter-btn:hover:not(.active) {
+    background: rgba(0,247,255,0.2);
+}
+
+.projects-grid {
+    padding: 3rem 0;
+}
+
+.projects-grid .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: rgba(10,10,20,0.5);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    border: var(--border);
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.project-media {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-media img {
+    transform: scale(1.05);
+}
+
+.project-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0,0,0,0.7);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    border: 1px solid var(--primary);
+    backdrop-filter: blur(5px);
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.project-tech {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.project-tech span {
+    background: rgba(0,247,255,0.1);
+    color: var(--primary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+}
+
+/* Hide filtered projects */
+.project-card {
+    display: block;
+}
+
+.project-card.hidden {
+    display: none;
+}

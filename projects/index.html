@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Darji | Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projects.css">
+</head>
+<body>
+    <!-- Reuse particles.js and grid overlay from main page -->
+    <div id="particles-js"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation (Same as main page) -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">DeepDarji</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#projects">Work</a>
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <section class="projects-header">
+        <div class="container">
+            <h1 class="glitch" data-text="My Projects">My Projects</h1>
+            <p>Filter by category or browse all</p>
+            
+            <!-- Category Filters -->
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="game">Games</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+        <div class="container">
+            <!-- Mobile App Projects -->
+            <article class="project-card" data-category="mobile">
+                <div class="project-media">
+                    <img src="../assets/images/projects/taskflow.jpg" alt="TaskFlow App">
+                    <div class="project-badge">
+                        <i class="fab fa-flutter"></i> Flutter
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>TaskFlow Pro</h3>
+                    <p>Productivity app with gesture controls and Firebase sync.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>BLoC</span>
+                    </div>
+                    <a href="taskflow.html" class="btn btn-outline">View Case Study</a>
+                </div>
+            </article>
+
+            <!-- Game Projects -->
+            <article class="project-card" data-category="game">
+                <div class="project-media">
+                    <img src="../assets/images/projects/space-adventure.jpg" alt="Space Adventure Game">
+                    <div class="project-badge">
+                        <i class="fab fa-unity"></i> Unity
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Space Adventure</h3>
+                    <p>3D mobile game with procedural level generation.</p>
+                    <div class="project-tech">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>ARCore</span>
+                    </div>
+                    <a href="space-adventure.html" class="btn btn-outline">View Details</a>
+                </div>
+            </article>
+
+            <!-- More projects... -->
+        </div>
+    </section>
+
+    <!-- Reuse footer from main page -->
+    <script src="../js/main.js"></script>
+    <script src="../js/projects.js"></script>
+</body>
+</html>
