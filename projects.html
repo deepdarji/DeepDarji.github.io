@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Darji | Projects</title>
+    <meta name="description" content="Explore Deep Darji's portfolio of mobile apps and games built with Flutter, Unity, and more.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">DeepDarji</a>
+            <div class="nav-links">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="index.html#certifications" class="nav-link">Certifications</a>
+                <a href="index.html#education" class="nav-link">Education</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-container">
+            <a href="index.html#home" class="mobile-nav-link">Home</a>
+            <a href="index.html#skills" class="mobile-nav-link">Skills</a>
+            <a href="index.html#experience" class="mobile-nav-link">Experience</a>
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="index.html#certifications" class="mobile-nav-link">Certifications</a>
+            <a href="index.html#education" class="mobile-nav-link">Education</a>
+            <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <section class="projects-header section">
+        <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Discover my work in mobile apps, games, and more</p>
+            <div class="category-filters">
+                <button class="filter-btn btn btn-outline active" data-filter="all">All</button>
+                <button class="filter-btn btn btn-outline" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn btn btn-outline" data-filter="game">Games</button>
+                <button class="filter-btn btn btn-outline" data-filter="other">Other</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid section">
+        <div class="container projects-grid-container">
+            
+                <div class="project-card" data-category="mobile">
+                
+                    <div class="project-image">
+                    <img src="assets/images/love-log.webp" alt="LoveLog App" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/LoveLog"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>LoveLog</h3>
+                    <p>A romantic productivity app for couples to track shared goals, save photo memories, write love notes, and get AI-generated date ideas & messages.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="assets/images/track-my-degree.webp" alt="Track My Degree App" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/Track-My-Degree"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Track My Degree</h3>
+                    <p>An app for students to manage subjects, backlogs, assignments, and receive AI-powered study plans and motivation.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="assets/images/drp.webp" alt="Driver Reputation Passport" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1XVF-YT0rB6JRd5F6QODrNP3oUCQ58rG3/view?usp=drivesdk"><i class="fas fa-external-link-alt"></i> APK</a>
+                            <a href="https://github.com/DeepDarji/DRP-Flutter-App"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Driver Reputation Passport</h3>
+                    <p>Fetch and view verified driver profiles, accident records, and vehicle details from blockchain using a 6-digit driver ID.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-card" data-category="other">
+                <div class="project-image">
+                    <img src="assets/images/drpweb.webp" alt="DRP Front End" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/DRP-Front-End"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>DRP Front End</h3>
+                    <p>A minimal, professional frontend interface for interacting with a smart contract to manage decentralized driver's data.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>Tailwind CSS</span>
+                        <span>JavaScript</span>
+                        <span>Web3.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="assets/images/8-Ball-Fortune.webp" alt="8 Ball Fortune Teller" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1Y6vZu2YTlGcTKdvj4yekTWp5iw7Xv063/view?usp=drivesdk"><i class="fas fa-external-link-alt"></i> APK</a>
+                            <a href="https://github.com/DeepDarji/8-Ball-Fortune-Teller"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>8 Ball Fortune Teller</h3>
+                    <p>A fun, interactive app delivering random fortunes inspired by the Magic 8-Ball.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="assets/images/Quotes.webp" alt="Quotes App" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1Y0FzBFj-EyKpjSNYu00_Xr9aP-svUgBT/view?usp=drivesdk"><i class="fas fa-external-link-alt"></i> APK</a>
+                            <a href="https://github.com/DeepDarji/Quotes-App"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Quotes App</h3>
+                    <p>A clean, minimal app displaying random motivational quotes fetched from a free API.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="assets/images/gjapp.webp" alt="GJ App" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://raw.githubusercontent.com/DeepDarji/GJ-App/refs/heads/main/GJ%20App%20Latest.apk"><i class="fas fa-external-link-alt"></i> APK</a>
+                            <a href="https://github.com/DeepDarji/GJ-App"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>GJ App</h3>
+                    <p>A multipurpose app designed for low storage and minimal hardware requirements.</p>
+                    <div class="project-tech">
+                        <span>Android Studio</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="assets/images/taskly.webp" alt="Taskly App" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/Taskly"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Taskly</h3>
+                    <p>An efficient task management app for adding, updating, and deleting tasks.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <img src="assets/images/frivia.webp" alt="Frivia Trivia Game" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/Frivia"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Frivia</h3>
+                    <p>A trivia game built with Flutter using Provider state management for game states and UI updates.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="game">
+                <div class="project-image">
+                    <img src="assets/images/startupsurge.webp" alt="Startup Surge" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/Startup-Surge"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Startup Surge</h3>
+                    <p>A 2D idle/tycoon game in Unity where players hire employees and upgrade systems for passive income.</p>
+                    <div class="project-tech">
+                        <span>Unity</span>
+                        <span>C#</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="game">
+                <div class="project-image">
+                    <img src="assets/images/fruitcatcher.webp" alt="Fruit Catcher" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/Fruit-Catcher"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Fruit Catcher</h3>
+                    <p>A fun 2D Unity game where players catch falling fruits with a basket, featuring dynamic sounds.</p>
+                    <div class="project-tech">
+                        <span>Unity</span>
+                        <span>C#</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="game">
+                <div class="project-image">
+                    <img src="assets/images/str8bat.webp" alt="Str8bat" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/Str8bat"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Str8bat</h3>
+                    <p>A Unity app displaying Pokémon cards with live data from PokeAPI, visually appealing and informative.</p>
+                    <div class="project-tech">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>API Integration</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="game">
+                <div class="project-image">
+                    <img src="assets/images/argonassault.webp" alt="Argon Assaultt" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/DeepDarji/Argon-Assaultt"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Argon Assaultt</h3>
+                    <p>A 3D rail shooter game in Unity, inspired by Star Fox, featuring fast-paced spaceship combat.</p>
+                    <div class="project-tech">
+                        <span>Unity</span>
+                        <span>C#</span>
+                        <span>3D Game</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">DeepDarji</a>
+                <p>Mobile App & Game Developer</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/deepdarji" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/deepdarji" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/DeepDarji_" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/deepdarji_" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Deep Darji. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
